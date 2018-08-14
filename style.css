@@ -15,7 +15,10 @@ body {
     box-sizing: border-box;
  }
 
-/* Flexbox */
+ /* ************************* */
+ /*        Flexbox            */
+ /* ************************* */
+
 .container {
     margin: 0 auto;
     /* border: 1px #000 solid; */
@@ -37,10 +40,9 @@ body {
     flex: 1;
 }
 
-a {
-    color: #000;
-    text-decoration: none;
-}
+/* ************************* */
+/* Header and Navigation Bar */
+/* ************************* */
 
 #header {
     position: sticky;
@@ -57,6 +59,10 @@ a {
     justify-content: center;
 }
 
+.nav-link {
+    text-transform: uppercase;
+}
+
 #nav-bar ul {
     display: flex;
     padding-right: 40px;
@@ -68,6 +74,11 @@ a {
     list-style-type: none;
     padding-left: 30px;
     font-size: 1.25em;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
 }
 
 #header-img {
@@ -90,18 +101,6 @@ a {
     justify-content: center;
 }
 
-#pricing {
-    display: flex;
-    /* border: 1px #000 solid; */
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.pricing-card {
-    flex: 0 0 250px;
-}
-
 .row-header {
     background-color: #edaf12;
 }
@@ -111,6 +110,10 @@ a {
     width: 100vw;
     justify-content: flex-end;
 }
+
+/* ************************* */
+/*          Showcase         */
+/* ************************* */
 
 .showcase-row {
     justify-content: center;
@@ -132,126 +135,9 @@ a {
     color: #333;
 }
 
-#features {
-    width: 100%;
-    justify-content: center;
-}
-
-#features .feature-row {
-    background-color: #ddd;
-    /* border: 1px #000 solid; */
-    justify-content: center;
-}
-
-#features .feature-box {
-    /* border: 1px #000 solid; */
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-#features .feature-title {
-    color: #000;
-    text-transform: uppercase;
-    font-size: 2em;
-    margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-#form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.form-row {
-    justify-content: center;
-}
-
-.form-title {
-    font-size: 2em;
-}
-
-form [type="email"] {
-    margin-top: 15px;
-    height: 35px;
-    width: 300px;
-    border: 2px #000 solid;
-}
-
-form [type="submit"] {
-    margin: 0 auto;
-    margin-top: 15px;
-    width: 175px;
-    padding: 0 20px;
-    text-align: center;
-    height: 40px;
-    font-size: 1em;
-    font-weight: 900;
-    text-transform: uppercase;
-    border: 2px #000 solid;
-    border-radius: 10px;;
-    background: transparent;
-    background-color: #fff;
-}
-
-.btn:hover {
-    background-color: #edaf12;
-    transition: background-color 0.2s;
-}
-
-.email-row {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.email-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #ddd;
-    color: #000;
-    box-shadow: 4px 6px 10px 4px black;
-    border-radius: 5px;
-    height: 25vh;
-    max-width: 600px;
-    margin-top: 75px;
-    margin-bottom: 75px;
-    justify-content: center;
-    align-items: center;
-}
-
-#footer ul {
-    margin: 0;
-    padding-top: 0;
-    padding-bottom: 30px;
-}
-
-.footer-row {
-    justify-content: center;
-    background-color: #ddd;
-}
-
-.footer-row ul {
-    display: inline-flex;
-    width: 100vw;
-    padding: 0;
-    margin 0;
-    margin-top: 10px;
-    justify-content: center;
-}
-
-.footer-row li {
-    list-style-type: none;
-    padding: 5px;
-}
-
-.footer-title {
-    margin: 0;
-    padding-top: 55px;
-    padding-bottom: 10px;
-}
+/* ************************* */
+/*          VIDEO            */
+/* ************************* */
 
 #video-section {
     flex-direction: column;
@@ -283,8 +169,50 @@ form [type="submit"] {
     color: #000;
 }
 
-.nav-link {
+/* ************************* */
+/*          Features         */
+/* ************************* */
+
+#features {
+    width: 100%;
+    justify-content: center;
+}
+
+#features .feature-row {
+    background-color: #ddd;
+    /* border: 1px #000 solid; */
+    justify-content: center;
+}
+
+#features .feature-box {
+    /* border: 1px #000 solid; */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#features .feature-title {
+    color: #000;
     text-transform: uppercase;
+    font-size: 2em;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* ************************* */
+/*       Pricing Cards       */
+/* ************************* */
+
+#pricing {
+    display: flex;
+    /* border: 1px #000 solid; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-card {
+    flex: 0 0 250px;
 }
 
 #pricing {
@@ -352,4 +280,107 @@ form [type="submit"] {
 
 .pricing-big {
   transform: scaleX(1.10);
+}
+
+/* ************************* */
+/*         EMAIL FORM        */
+/* ************************* */
+
+#form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row {
+    justify-content: center;
+}
+
+.form-title {
+    font-size: 2em;
+}
+
+form [type="email"] {
+    margin-top: 15px;
+    height: 35px;
+    width: 300px;
+    border: 2px #000 solid;
+}
+
+form [type="submit"] {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 175px;
+    padding: 0 20px;
+    text-align: center;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 2px #000 solid;
+    border-radius: 10px;;
+    background: transparent;
+    background-color: #fff;
+}
+
+.btn:hover {
+    background-color: #edaf12;
+    transition: background-color 0.2s;
+}
+
+.email-row {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.email-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+    color: #000;
+    box-shadow: 4px 6px 10px 4px black;
+    border-radius: 5px;
+    height: 25vh;
+    max-width: 600px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ************************* */
+/*          FOOTER           */
+/* ************************* */
+
+#footer ul {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 30px;
+}
+
+.footer-row {
+    justify-content: center;
+    background-color: #ddd;
+}
+
+.footer-row ul {
+    display: inline-flex;
+    width: 100vw;
+    padding: 0;
+    margin 0;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.footer-row li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.footer-title {
+    margin: 0;
+    padding-top: 55px;
+    padding-bottom: 10px;
 }
