@@ -239,6 +239,11 @@ a {
     align-items: center;
 }
 
+.center {
+    text-align: center;
+    padding-top: 15px;
+}
+
 .pricing-card {
     margin: 12px;
     background: #f2f2f2;
@@ -387,10 +392,6 @@ form [type="submit"] {
     padding-bottom: 10px;
 }
 
-/* ************* */
-/* MEDIA QUERIES */
-/* ************* */
-
 /* ******************** */
 /*     Media Queries    */
 /* ******************** */
@@ -407,6 +408,23 @@ form [type="submit"] {
     #showcase h2 {
         font-size: 2.75em;
     }
+
+    .pricing-card {
+        flex: 0 0 200px;
+        padding-bottom: 25px;
+    }
+
+    .pricing-card > header {
+        height: 65px;
+    }
+
+    .pricing-center {
+        justify-content: center;
+    }
+
+    .pricing-card > ul li {
+        font-size: 1em;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -415,8 +433,16 @@ form [type="submit"] {
         font-size: 2.75em;
     }
 
+    #nav-bar li {
+        font-size: 1.25em;
+    }
+
     #showcase h2 {
-        font-size: 3em;
+        font-size: 3.5em;
+    }
+
+    .pricing-card {
+        flex: 0 0 250px;
     }
 }
 
