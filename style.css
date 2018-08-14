@@ -47,7 +47,6 @@ body {
 #header {
     position: sticky;
     top: 0;
-    min-height: 45px;
 }
 
 #nav-bar {
@@ -71,6 +70,7 @@ body {
 }
 
 #nav-bar li {
+    display: inline-flex;
     list-style-type: none;
     padding-left: 30px;
     font-size: 1.25em;
@@ -385,4 +385,43 @@ form [type="submit"] {
     margin: 0;
     padding-top: 55px;
     padding-bottom: 10px;
+}
+
+/* ************* */
+/* MEDIA QUERIES */
+/* ************* */
+
+/* ******************** */
+/*     Media Queries    */
+/* ******************** */
+@media (min-width: 768px) {
+    .logo {
+        font-size: 2.25em;
+        line-height: 1em;
+    }
+
+    #nav-bar li {
+        font-size: 1em;
+    }
+
+    #showcase h2 {
+        font-size: 2.75em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo {
+        line-height: 1em;
+        font-size: 2.75em;
+    }
+
+    #showcase h2 {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 1025px) {
+    #showcase h2 {
+        font-size: 4em;
+    }
 }
