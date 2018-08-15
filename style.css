@@ -21,7 +21,6 @@ body {
 
 .container {
     margin: 0 auto;
-    /* border: 1px #000 solid; */
     width: 100%;
     display: flex;
 }
@@ -45,7 +44,7 @@ body {
 /* ************************* */
 
 #header {
-    position: sticky;
+    position: fixed;
     top: 0;
 }
 
@@ -129,6 +128,7 @@ a {
     justify-content: center;
     background-color: #777;
     background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+    padding-top: 75px;
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
@@ -138,58 +138,27 @@ a {
 }
 
 /* ************************* */
-/*          VIDEO            */
-/* ************************* */
-
-#video-section {
-    flex-direction: column;
-}
-
-#video-section iframe {
-    padding-bottom: 75px;
-}
-
-#video-section .video-row {
-    align-items: flex-start;
-    width: 100%;
-    background-color: #fff;
-    justify-content: center;
-}
-
-.video-column {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#video-section h2 {
-    text-transform: uppercase;
-    margin: 0;
-    padding-top: 50px;
-    padding-bottom: 35px;
-    font-size: 2em;
-    color: #000;
-}
-
-/* ************************* */
 /*          Features         */
 /* ************************* */
 
 #features {
     width: 100%;
     justify-content: center;
+    /* padding-top: 148px; */
+    /* margin-top: 148px; */
+    background-color: #ddd;
 }
 
 #features .feature-row {
     background-color: #ddd;
     /* border: 1px #000 solid; */
+    /* padding-top: 198px; */
+
     justify-content: center;
 }
 
 #features .feature-box {
-    /* border: 1px #000 solid; */
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 30px 15px 30px 15px;
 }
 
 #features .feature-title {
@@ -206,6 +175,40 @@ a {
 
 #features .feature-category {
     text-align: center;
+}
+
+/* ************************* */
+/*          VIDEO            */
+/* ************************* */
+
+#video-section {
+    flex-direction: column;
+}
+
+#video-section iframe {
+    padding-bottom: 75px;
+    padding-top: 10px;
+}
+
+#video-section .video-row {
+    align-items: flex-start;
+    width: 100%;
+    background-color: #fff;
+    justify-content: center;
+}
+
+.video-column {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#video-section h2 {
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    font-size: 2em;
+    color: #000;
 }
 
 /* ************************* */
