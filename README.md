@@ -1,1 +1,3 @@
 # fcc-product-landing-page
+
+The Product Landing Page project from freeCodeCamp's Responsive Web Design Certification challenge.  It was created using basic HTML5, CSS3, CSS Flexbox and a little JS. The logo image is courtesy of icons8.com, and the inspiration for the pricing cards came from Ohans Emmanuel's Flexbox Examples-The Ultimate Guide. The JS code is from w3schools.com and makes the navigation bar disappear when someone clicks a navigation link to jump to another section of the page. It will reappear when you begin to scroll up. The JS code prevents the navigation bar from hiding the top portion of the section.
