@@ -309,6 +309,10 @@ a {
     flex-wrap: wrap;
 }
 
+#email {
+	font-size: 15px;
+}
+
 .form-row {
     justify-content: center;
 }
