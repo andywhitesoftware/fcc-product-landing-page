@@ -117,7 +117,7 @@ a {
 /*          Showcase         */
 /* ************************* */
 
-.showcase-row {
+#showcase .showcase-row {
     justify-content: center;
 }
 
@@ -194,11 +194,18 @@ a {
 
 #features .feature-title {
     color: #000;
+    width: 100%;
     text-transform: uppercase;
     font-size: 2em;
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 50px;
+    border-bottom: 2px #000 solid;
+    text-align: center;
+}
+
+#features .feature-category {
+    text-align: center;
 }
 
 /* ************************* */
